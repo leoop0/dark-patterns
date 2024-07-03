@@ -1,0 +1,106 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f5ee;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+  a {
+    text-decoration: none;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    &-text {
+      font-size: 1.2rem;
+      color: #000490;
+      font-family: "Sk-Modernist";
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+  }
+
+  &__search {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    .input-container {
+      position: relative;
+      width: 40%;
+      svg {
+        position: absolute;
+        left: 10px;
+        color: #0b26b5;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      span {
+        position: absolute;
+        right: 10px;
+        color: #0b26b5;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      input {
+        width: 100%;
+        padding: 8px 10px 8px 40px;
+        font-size: 1rem;
+
+        border: solid 1px #d4d5dadd;
+        height: 40px;
+        background-color: transparent;
+      }
+    }
+  }
+
+  &__contact {
+    &-button {
+      grid-column-gap: 0.5rem;
+
+      background-color: #000490;
+      color: white;
+      text-align: center;
+      white-space: nowrap;
+      border: none;
+      justify-content: center;
+      align-items: center;
+      padding: 0.625rem 1.125rem;
+      font-weight: 600;
+      transition: background-color 0.3s;
+      display: flex;
+
+      cursor: pointer;
+
+      &:hover {
+        background-color: #0b26b5;
+      }
+    }
+  }
+}
+
+.overlay {
+  .overlay__search-input {
+    position: absolute;
+
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 12px 20px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+  }
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 3;
+}
