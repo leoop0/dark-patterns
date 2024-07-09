@@ -17,6 +17,15 @@ function Vul() {
         <div className="content">
           <div className="section">
             <h2>Biais et vulnérabilités</h2>
+            <div className="quote">
+              <p>
+                “People behave more on the basis of how they feel than how they think; unless there
+                are good feelings between people, it is almost impossible to reason intelligently.“
+              </p>
+              <span>
+                <div className="line"></div>Stephen Covey
+              </span>
+            </div>
             <p>
               Pour comprendre comment ces dark patterns fonctionnent et sont efficaces sur notre
               cerveau, il est primordial de s’intéresser aux biais et vulnérabilités que nous
@@ -97,6 +106,28 @@ function Vul() {
                 des outils puissants pour créer des dark patterns.
               </p>
             </div>
+          </div>
+
+          <div className="section">
+            <h2>Impact psychologique</h2>
+            <p>
+              Les Dark Patterns ont des conséquences psychologiques significatives, dépassant la
+              simple frustration momentanée. Leur utilisation répandue engendre une méfiance
+              générale envers les technologies numériques, créant un sentiment de perte de contrôle
+              et d'impuissance chez les utilisateurs. Cette manipulation constante peut affecter
+              l'estime de soi, particulièrement lorsque les utilisateurs réalisent avoir été
+              trompés. Cela peut conduire à une réticence à explorer de nouvelles technologies,
+              limitant ainsi leurs opportunités dans un monde numérique en expansion. De plus, en
+              exploitant les vulnérabilités psychologiques, ces pratiques peuvent exacerber les
+              comportements addictifs, impactant négativement la santé mentale. Les populations
+              vulnérables, comme les personnes âgées ou celles ayant une faible littératie
+              numérique, sont particulièrement à risque.
+            </p>
+            <p>
+              En somme, les Dark Patterns ne se contentent pas de manipuler ponctuellement ; ils
+              façonnent durablement la relation des utilisateurs avec la technologie, affectant leur
+              confiance et leur bien-être émotionnel.
+            </p>
           </div>
         </div>
       </div>

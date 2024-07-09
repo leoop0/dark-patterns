@@ -8,6 +8,8 @@ import { ReactComponent as CTA } from "../../assets/ico/cta.svg";
 import { ReactComponent as Background } from "../../assets/misc/bg.svg";
 import Footer from "../../components/Footer/Footer";
 
+import Harry from "../../assets/img/harryB.png";
+
 function Def() {
   return (
     <div className="wrapper">
@@ -36,11 +38,14 @@ function Def() {
               victimes de nos propres biais et de la façon dont ils sont exploités par de nombreuses
               entreprises.
             </p>
-            <p>
-              Introduits en 2010 par Harry Brignull, un spécialiste UX, les Dark Patterns, également
-              appelés les Deceptive Patterns représentent des interfaces conçues délibérément pour
-              tromper ou manipuler les utilisateurs.
-            </p>
+            <div className="grid-vignette">
+              <img src={Harry} alt="" />
+              <p>
+                Introduits en 2010 par Harry Brignull, un spécialiste UX, les Dark Patterns,
+                également appelés les Deceptive Patterns représentent des interfaces conçues
+                délibérément pour tromper ou manipuler les utilisateurs.
+              </p>
+            </div>
             <p>
               Et c’est dans cette quête de sensibilisation et de protection des utilisateurs que
               Harry Brignull a fondé le site deceptive.design (anciennement darkpatterns.org).

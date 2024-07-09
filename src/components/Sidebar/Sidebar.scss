@@ -1,20 +1,80 @@
 .sidebar {
-  width: 305px; // Vous pouvez ajuster cette valeur selon vos besoins
+  width: 305px;
   padding: 20px;
-  // background-color: #f8f9fa;
-
   border-right: 1px solid #dee2e6;
   padding-top: 90px;
+  transition: width 0.3s ease;
+  position: relative;
+
+  &.collapsed {
+    width: 80px;
+    a {
+      h4 {
+        display: none;
+      }
+    }
+  }
+
+  .toggle-button {
+    display: block;
+    margin: 10px;
+    height: 42px;
+    width: 42px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #f8f5ee;
+    position: absolute;
+    border: none;
+    bottom: 10px;
+    right: -30px;
+  }
 
   a {
     text-decoration: none;
     color: #0b26b5;
+    position: relative;
+
+    .tooltip {
+      visibility: hidden;
+      background-color: #101828;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 6px;
+      position: absolute;
+      z-index: 1;
+      left: 115%;
+      white-space: nowrap;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        margin-top: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent #101828 transparent transparent;
+      }
+    }
+
+    &:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
   }
 
   .sidebar-section {
     margin-bottom: 20px;
 
     &.current {
+      ul {
+        display: flex;
+      }
       .sidebar-item {
         background-color: #0b26b5;
         h4,
@@ -40,6 +100,7 @@
         font-style: normal;
         font-weight: 600;
         line-height: 24px;
+        transition: opacity 0.3s ease;
       }
 
       svg {
@@ -56,7 +117,7 @@
       padding-top: 8px;
       list-style: none;
       padding-left: 37px;
-      display: flex;
+      display: none;
       flex-direction: column;
       gap: 14px;
 
@@ -71,6 +132,26 @@
           color: #007bff;
           padding-left: 10px;
         }
+      }
+    }
+  }
+
+  &.collapsed {
+    .sidebar-section {
+      .sidebar-item {
+        justify-content: center;
+
+        h4 {
+          opacity: 0;
+        }
+
+        svg {
+          margin-right: 0;
+        }
+      }
+
+      ul {
+        display: none;
       }
     }
   }

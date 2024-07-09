@@ -1,0 +1,59 @@
+[
+  {
+    "title": "Définition et identification",
+    "items": [
+      { "name": "Qu’est-ce que c’est", "id": "1" },
+      { "name": "Pourquoi on les utilise", "id": "2" },
+      { "name": "Nudge ou Dark Pattern", "id": "3" }
+    ],
+    "icon": "Book",
+    "url": "/definition-identification"
+  },
+  {
+    "title": "Vulnérabilités psychologiques",
+    "items": [
+      { "name": "Biais et vulnérabilités", "id": "1" },
+      { "name": "Lois UX", "id": "2" },
+      { "name": "Impact psychologique", "id": "3" }
+    ],
+    "icon": "Brain",
+    "url": "/vulnerabilites-psychologiques"
+  },
+  {
+    "title": "Étude de cas et exemples",
+    "items": [
+      { "name": "Le cas Amazon Prime", "id": "1" },
+      { "name": "Exemples concrets", "id": "2" },
+      { "name": "Liste de la honte", "id": "3" }
+    ],
+    "icon": "Search",
+    "url": "/etude-cas-exemples"
+  },
+  {
+    "title": "Défis éthiques",
+    "items": [
+      { "name": "Consentement des utilisateurs", "id": "1" },
+      { "name": "Cadre légal", "id": "2" }
+    ],
+    "icon": "Scale",
+    "url": "/defis-ethiques"
+  },
+  {
+    "title": "Pistes de solutions",
+    "items": [],
+    "icon": "Bulb",
+    "url": "/pistes-solutions"
+  },
+  {
+    "title": "Conclusion",
+    "items": [],
+    "icon": "File",
+    "url": "/conclusion"
+  },
+  {
+    "title": "Remerciements",
+    "items": [],
+    "icon": "Heart",
+    "url": "/remerciements"
+  }
+]

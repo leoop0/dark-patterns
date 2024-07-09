@@ -1,10 +1,16 @@
+:root {
+  --sidebar-width-expanded: 305px;
+  --sidebar-width-collapsed: 80px;
+}
+
 #layout {
   height: 100vh;
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 305px 1fr;
   background: url("./assets/misc/noise-bg.png") 10px 10px repeat;
   overflow: hidden;
+  grid-template-rows: 1fr;
+  grid-template-columns: var(--sidebar-width) 1fr;
+  transition: grid-template-columns 0.3s ease;
 }
 
 .page {
@@ -122,4 +128,33 @@
   width: 100%;
   right: 0;
   z-index: -1;
+}
+
+.link-card {
+  padding: 20px;
+  border: solid 1px #d4d5dadd;
+  border-radius: 12px;
+  text-decoration: none;
+
+  img {
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  h5 {
+    font-size: 18px;
+    color: #0b26b5;
+    margin: 20px 0 10px 0;
+  }
+
+  span {
+    color: black;
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 768px) {
+  #layout {
+    display: block;
+  }
 }

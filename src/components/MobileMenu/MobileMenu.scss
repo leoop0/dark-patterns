@@ -1,0 +1,81 @@
+.mobile-menu {
+  a {
+    text-decoration: none;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 64px;
+    background-color: #fff;
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  &__logo {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  &__burger {
+    cursor: pointer;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #fff;
+    border-top: 1px solid #dee2e6;
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+
+    &-item {
+      text-decoration: none;
+      color: #000;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #000490;
+      font-weight: 500;
+      padding: 6px;
+      border-radius: 6px;
+
+      &.current {
+        background-color: #0b26b5;
+        color: #f8f5ee;
+
+        svg {
+          color: #f8f5ee;
+        }
+      }
+
+      svg {
+        color: #5c6bba;
+      }
+
+      &:hover {
+        background-color: #f8f9fa;
+      }
+    }
+  }
+
+  .overlay {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+}

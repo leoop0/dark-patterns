@@ -4,6 +4,18 @@ import "./Study.scss";
 import Footer from "../../components/Footer/Footer";
 
 import PrimeLogo from "../../assets/img/prime.png";
+import Ufc from "../../assets/img/ufc.png";
+
+import { ReactComponent as Fb } from "../../assets/logos/fb.svg";
+import { ReactComponent as Adobe } from "../../assets/logos/adobe.svg";
+import { ReactComponent as Ryanair } from "../../assets/logos/ryanair.svg";
+import { ReactComponent as Lk } from "../../assets/logos/lk.svg";
+import { ReactComponent as Micro } from "../../assets/logos/microsoft.svg";
+import { ReactComponent as Time } from "../../assets/logos/time.svg";
+import { ReactComponent as Apple } from "../../assets/logos/apple.svg";
+import { ReactComponent as X } from "../../assets/logos/x.svg";
+import { ReactComponent as Amazon } from "../../assets/logos/amazon.svg";
+import { ReactComponent as Yahoo } from "../../assets/logos/yahoo.svg";
 
 function Study() {
   return (
@@ -28,7 +40,7 @@ function Study() {
               Amazon propose régulièrement une période d'essai gratuite pour Prime, attirant les
               utilisateurs avec des avantages attrayants qui, de prime abord sont sans frais.
               Cependant, aucune notification explicite n’est envoyée à la fin de la période d'essai,
-              ce qui pousse les utilisateurs à reconduire leur abonnement sans réelle volonté ed le
+              ce qui pousse les utilisateurs à reconduire leur abonnement sans réelle volonté de le
               faire, à moins qu'ils n'annulent leur abonnement à temps. Cette pratique tire parti de
               l'inattention ou de l'oubli des utilisateurs.
             </p>
@@ -51,6 +63,19 @@ function Study() {
               désabonnement d’Amazon Prime, la société se met enfin en conformité avec le droit
               européen.
             </p>
+            <a
+              href="https://www.quechoisir.org/billet-du-president-amazon-prime-le-piege-a-utilisateur-supprime-n102144/"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="link-card"
+            >
+              <img src={Ufc} alt="" />
+              <h5>
+                {" "}
+                Le piège à utilisateur supprimé ! - Billet de la présidente - UFC-Que Choisir
+              </h5>
+              <span>www.quechoisir.org</span>
+            </a>
             <p>
               L'exemple d'Amazon Prime illustre comment les entreprises peuvent utiliser des dark
               patterns pour maximiser leurs profits, souvent au détriment de la transparence et de
@@ -81,6 +106,18 @@ function Study() {
               est dynamique et évolue au fil du temps, reflétant les changements dans les pratiques
               des entreprises et la vigilance croissante des utilisateurs et des régulateurs.
             </p>
+            <div className="list">
+              <Fb />
+              <Adobe />
+              <Ryanair />
+              <Lk />
+              <Micro />
+              <Time />
+              <Apple />
+              <X />
+              <Amazon />
+              <Yahoo />
+            </div>
           </div>
         </div>
       </div>

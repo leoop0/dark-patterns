@@ -95,3 +95,10 @@
     }
   }
 }
+
+.Home {
+  .prev {
+    opacity: 0;
+    pointer-events: none;
+  }
+}

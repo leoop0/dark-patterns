@@ -14,7 +14,7 @@ function Law() {
           <h1>Défis éthiques</h1>
           <p>
             Dans le paysage numérique en constante évolution, les défis éthiques liés à
-            l'utilisation des Dark Patterns sont devenus un sujet de préoccupation majeur.
+            l'utilisation des dark patterns sont devenus un sujet de préoccupation majeur.
           </p>
         </div>
         <div className="content">

@@ -1,83 +1,34 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import "./Sidebar.scss";
-import { ReactComponent as Brain } from "../../assets/ico/brain.svg";
-import { ReactComponent as Book } from "../../assets/ico/book.svg";
-import { ReactComponent as Bulb } from "../../assets/ico/bulb.svg";
-import { ReactComponent as Heart } from "../../assets/ico/heart.svg";
-import { ReactComponent as Scale } from "../../assets/ico/scale.svg";
-import { ReactComponent as Search } from "../../assets/ico/search.svg";
-
-const sidebarData = [
-  {
-    title: "Définition et identification",
-    items: [
-      { name: "Qu’est-ce que c’est", id: "1" },
-      { name: "Pourquoi on les utilise", id: "2" },
-      { name: "Nudge ou Dark Pattern", id: "3" },
-    ],
-    icon: <Book />,
-    url: "/definition-identification",
-  },
-  {
-    title: "Vulnérabilités psychologiques",
-    items: [
-      { name: "Biais et vulnérabilités", id: "1" },
-      { name: "Lois UX", id: "2" },
-    ],
-    icon: <Brain />,
-    url: "/vulnerabilites-psychologiques",
-  },
-  {
-    title: "Étude de cas et exemples",
-    items: [
-      { name: "Le cas Amazon Prime", id: "1" },
-      { name: "Exemples concrets", id: "2" },
-      { name: "Liste de la honte", id: "3" },
-    ],
-    icon: <Search />,
-    url: "/etude-cas-exemples",
-  },
-  {
-    title: "Défis éthiques",
-    items: [
-      { name: "Consentement des utilisateurs", id: "1" },
-      { name: "Cadre légal", id: "2" },
-    ],
-    icon: <Scale />,
-    url: "/defis-ethiques",
-  },
-  {
-    title: "Pistes de solutions",
-    items: [
-      { name: "Atténuer leur utilisation", id: "1" },
-      { name: "Conception éthique", id: "2" },
-      { name: "Sanctions", id: "3" },
-    ],
-    icon: <Bulb />,
-    url: "/pistes-solutions",
-  },
-  {
-    title: "Conclusion",
-    items: [],
-    icon: <Heart />,
-    url: "/conclusion",
-  },
-];
+import { useSidebar } from "./Sidebarcontext";
+import { ReactComponent as Collapse } from "../../assets/ico/collapse.svg";
+import { ReactComponent as Expand } from "../../assets/ico/expand.svg";
+import sidebarData from "../../sidebarData.json";
+import icons from "../../icons";
 
 const Sidebar = () => {
   const location = useLocation();
+  const { isCollapsed, toggleSidebar } = useSidebar();
+
+  React.useEffect(() => {
+    const sidebarWidth = isCollapsed
+      ? "var(--sidebar-width-collapsed)"
+      : "var(--sidebar-width-expanded)";
+    document.documentElement.style.setProperty("--sidebar-width", sidebarWidth);
+  }, [isCollapsed]);
 
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${isCollapsed ? "collapsed" : ""}`}>
       {sidebarData.map((section, index) => (
         <div
           key={index}
           className={`sidebar-section ${location.pathname === section.url ? "current" : ""}`}
         >
           <a href={section.url} className="sidebar-item">
-            {section.icon}
+            {icons[section.icon]}
             <h4>{section.title}</h4>
+            {isCollapsed && <span className="tooltip">{section.title}</span>}
           </a>
           {section.items.length > 0 && (
             <ul>
@@ -90,6 +41,9 @@ const Sidebar = () => {
           )}
         </div>
       ))}
+      <button className="toggle-button" onClick={toggleSidebar}>
+        {isCollapsed ? <Expand /> : <Collapse />}
+      </button>
     </div>
   );
 };

@@ -4,9 +4,11 @@ import "./Header.scss";
 
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 import { ReactComponent as Search } from "../../assets/ico/search.svg";
+import contentIndex from "../../contentIndex.json";
 
 const Header = () => {
   const [isSearchActive, setIsSearchActive] = useState(false);
+  const [searchResults, setSearchResults] = useState([]);
   const searchInputRef = useRef(null);
 
   const handleSearchClick = () => {
@@ -22,6 +24,16 @@ const Header = () => {
   const handleKeyDown = (event) => {
     if (event.key === "k" && event.metaKey) {
       setIsSearchActive(true);
+    }
+  };
+
+  const handleSearch = (event) => {
+    const query = event.target.value.toLowerCase();
+    if (query) {
+      const results = contentIndex.filter((item) => item.content.toLowerCase().includes(query));
+      setSearchResults(results);
+    } else {
+      setSearchResults([]);
     }
   };
 
@@ -44,18 +56,27 @@ const Header = () => {
             placeholder="Rechercher"
             autoFocus
             ref={searchInputRef}
+            onChange={handleSearch}
           />
+          <div className="overlay__search-results">
+            {searchResults.map((result) => (
+              <div key={result.file} className="search-result">
+                <Link to={result.route}>
+                  <h4>{result.file.replace(".jsx", "")}</h4>
+                </Link>
+                <p>{result.content.substring(0, 200)}...</p>
+              </div>
+            ))}
+          </div>
         </div>
       )}
       <header className="header">
-        <div className="header__logo">
+        <Link to="/" className="header__logo">
           <Logo />
-          <Link to="/" className="header__logo-text">
-            DarkPatterns
-          </Link>
-        </div>
+          <div className="header__logo-text">DarkPatterns</div>
+        </Link>
         <div className="header__search">
-          <div className="input-container">
+          {/* <div className="input-container">
             <Search />
             <input
               type="text"
@@ -64,10 +85,12 @@ const Header = () => {
               onClick={handleSearchClick}
             />
             <span> ⌘K</span>
-          </div>
+          </div> */}
         </div>
         <div className="header__contact">
-          <button className="header__contact-button">Contact</button>
+          <a href="mailto:fratileo@gmail.com" className="header__contact-button">
+            Contact
+          </a>
         </div>
       </header>
     </>
