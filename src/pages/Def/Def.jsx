@@ -18,7 +18,8 @@ function Def() {
         <div className="title">
           <h1>Définition et identification</h1>
           <p>
-            This is a secondary page preview. As evident, content is displayed on this type of page.
+            Nous avons tous déjà entendu parler des dark patterns de façon plus ou moins détournée.
+            Il est temps d'enfin comprendre ce qu'ils sont et les enjeux qu'ils soulèvent.
           </p>
         </div>
         <div className="content">
@@ -41,7 +42,7 @@ function Def() {
             <div className="grid-vignette">
               <img src={Harry} alt="" />
               <p>
-                Introduits en 2010 par Harry Brignull, un spécialiste UX, les Dark Patterns,
+                Introduits en 2010 par Harry Brignull, un spécialiste UX, les dark patterns,
                 également appelés les Deceptive Patterns représentent des interfaces conçues
                 délibérément pour tromper ou manipuler les utilisateurs.
               </p>
@@ -102,12 +103,12 @@ function Def() {
               On pourrait se demander pourquoi mettre en place ces interfaces trompeuses ? En
               réalité le raisonnement des entreprises est simple : ça fonctionne et ça rapporte.
               Donc, tant qu’on ne se fait pas prendre, on continue. C’est la principale raison pour
-              laquelle les Dark Patterns sont essentiellement exploités sur les sites et
+              laquelle les dark patterns sont essentiellement exploités sur les sites et
               applications avec un traffic massif.
             </p>
             <p>
               Pour détailler un peu plus ce point, voilà quelques raisons spécifiques pour
-              lesquelles les Dark Patterns sont utilisés :
+              lesquelles les dark patterns sont utilisés :
             </p>
             <ul>
               <li>
@@ -124,7 +125,7 @@ function Def() {
               </li>
             </ul>
             <p>
-              En bref, le principal but des sites et applications qui se servent des Dark Patterns
+              En bref, le principal but des sites et applications qui se servent des dark patterns
               et mercantile.
             </p>
           </div>

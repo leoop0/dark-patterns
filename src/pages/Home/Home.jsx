@@ -20,7 +20,7 @@ function Home() {
           </div>
           <h1>Dark patterns</h1>
           <p>
-            Comment les Dark Patterns exploitent les vulnérabilités psychologiques des utilisateurs
+            Comment les dark patterns exploitent les vulnérabilités psychologiques des utilisateurs
             et posent des défis éthiques ?
           </p>
         </div>
@@ -75,7 +75,7 @@ function Home() {
                 bidouillé mon premier ordinateur pendant des jours et des jours pour essayer telle
                 ou telle fonction, parfois sans succès mais toujours avec un grand intérêt.
               </p>
-              <h3>Pourquoi les Dark Patterns ?</h3>
+              <h3>Pourquoi les dark patterns ?</h3>
               <p>
                 Ayant de fortes convictions sociales, il me paraissait important d'en parler. Car au
                 délà de l'aspect purement technique des dark patterns, leur impact et les biais mis

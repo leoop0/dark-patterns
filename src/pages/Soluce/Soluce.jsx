@@ -35,7 +35,7 @@ function Soluce() {
             <p>
               Cette situation souligne la nécessité d'une approche multidimensionnelle, combinant
               sensibilisation, réglementation et sanctions économiques, pour véritablement atténuer
-              l'utilisation des Dark Patterns.
+              l'utilisation des dark patterns.
             </p>
             <h3>Conception éthique</h3>
             <p>
@@ -55,6 +55,33 @@ function Soluce() {
               interfaces dans un délai imparti, sous peine de sanctions supplémentaires ? Et si on
               donnait aux utilisateurs les moyens de signaler facilement les abus ? Cela permettrait
               une détection plus rapide et efficace des pratiques douteuses.
+            </p>
+          </div>
+          <div className="section">
+            <h2>L'éducation numérique comme rempart</h2>
+            <p>
+              L'éducation numérique semble aussi être une solution toute trouvée. Il ne s'agit pas
+              seulement de sensibiliser les utilisateurs, mais de leur donner les moyens de
+              reconnaître et de contrer ces pratiques.
+            </p>
+            <p>
+              Nous pourrions par exemple imaginer des cours d'informatique intégrant des modules sur
+              l'éthique du numérique, où les élèves apprendraient à décrypter les dark patterns. Des
+              ateliers pratiques pourraient mettre en scène des situations réelles, permettant aux
+              participants de développer un œil critique sur les designs qu'ils rencontrent au
+              quotidien.
+            </p>
+            <p>
+              Pour les adultes, des campagnes de sensibilisation grand public, relayées par les
+              médias et les réseaux sociaux, pourraient être mises en place. Des guides pratiques,
+              des vidéos explicatives, voire des applications ludiques pourraient être développés
+              pour apprendre à repérer les dark patterns de manière interactive.
+            </p>
+            <p>
+              L'objectif n'est pas de diaboliser la technologie, mais d'encourager une utilisation
+              éclairée et responsable. En formant des utilisateurs avertis, nous créons une pression
+              positive sur les entreprises, les incitant à adopter des pratiques plus éthiques,
+              étant donné que les dark patterns auraient beaucoup moins de succès.
             </p>
           </div>
           <div className="section">

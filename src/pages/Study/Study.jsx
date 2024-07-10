@@ -25,7 +25,9 @@ function Study() {
         <div className="title">
           <h1>Étude de cas et exemples</h1>
           <p>
-            This is a secondary page preview. As evident, content is displayed on this type of page.
+            À travers des exemples concrets, nous allons explorer comment les dark patterns sont
+            utilisés pour influencer les décisions des utilisateurs et les inciter à prendre des
+            actions qui ne sont pas dans leur intérêt.
           </p>
         </div>
         <div className="content">
@@ -46,6 +48,34 @@ function Study() {
             </p>
             <h3>Processus d'abonnement</h3>
             <p>Léa, ayant souscrit sans le vouloir à Amazon Prime nous dit : </p>
+            <div class="imessage">
+              <p class="from-them">
+                Je me suis inscrite à Amazon Prime pour avoir la livraison gratuite et en 1 jour.
+                J'ai pas pensé à mettre de rappel pour annuler l'abonnement avant la fin des 30
+                jours gratuits et comme ils préviennent pas, bah j'ai payé 49€ pour rien 🤡
+                <br />
+                J'utilise quasiment pas Amazon, ni prime vidéo
+              </p>
+              <p class="from-me">Est-ce que tu as eu l'impression de te faire arnaquer ?</p>
+              <p class="from-them margin-b_one">
+                Ah oui oui, je me suis senti très conne, "en mode moi je travaille dans l'UX et je
+                viens de me faire avoir comme ça ??? 🥲"
+              </p>
+            </div>{" "}
+            <p>
+              Si ce verbatim peut prêter à sourire, il est pourtant très important et témoigne de
+              l'état d'esprit des utilisateurs face à ces pratiques.
+            </p>
+            <p>
+              Et c'est là tout le problème. Les utilisateurs, même les plus avertis, peuvent être
+              victimes de ces pratiques trompeuses. Les dark patterns exploitent les biais cognitifs
+              et les vulnérabilités psychologiques des utilisateurs pour les inciter à prendre des
+              décisions qui ne sont pas dans leur intérêt.
+            </p>
+            <p>
+              Si s'abonner est extrêmement facile, se désabonner est en revanche bien plus
+              compliqué.
+            </p>
             <h3>Processus de désabonnement</h3>
             <p>
               Le processus de désabonnement d'Amazon Prime est notoirement complexe. Les
@@ -91,20 +121,78 @@ function Study() {
               Penchons nous maintenant sur d’autres exemples plus brefs, mais tout aussi
               intéressants.
             </p>
+            <p>
+              Google : Google Ads retarderait légèrement l'affichage des publicités pour inciter les
+              utilisateurs à cliquer dessus, les confondant avec des résultats organiques
+            </p>
+            <p>
+              Booking : affiche souvent des messages comme "Plus que 2 chambres disponibles !" ou un
+              compte à rebours pour créer un faux sentiment d'urgence et pousser à la réservation
+              rapide.
+            </p>
+            <p>
+              Airbnb : accusé de cacher des couts, des frais de service et des taxes dans les
+              dernières étapes de la réservation.
+            </p>
+          </div>
+          <div className="section">
+            <h2>Dark patterns dans les applications mobiles</h2>
+            <p>
+              Si les sites web sont souvent pointés du doigt pour leur utilisation de dark patterns,
+              les applications mobiles ne sont pas en reste. Avec l'omniprésence des smartphones,
+              ces pratiques se sont largement répandues sur tous nos appareils.
+            </p>
+            <p>
+              Prenons l'exemple des jeux "free-to-play". Beaucoup utilisent des techniques
+              psychologiques poussées pour inciter aux micro-transactions. Des pop-ups apparaissent
+              au moment où le joueur est le plus investi, proposant des offres "uniques" pour
+              débloquer du contenu ou progresser plus rapidement. Ces interruptions sont conçues
+              pour exploiter notre impulsivité et notre désir de gratification immédiate.
+            </p>
+            <h3>Raid Shadow Legends</h3>
+            <p>
+              Afin de donner un exemple plus concret, le jeu mobile Raid Shadow Legends est accusé
+              d'avoir placé une multitude de dark patterns au sein de son expérience. Le site{" "}
+              <a href="https://www.darkpattern.games/game/285/0/raid-shadow-legends.html">
+                darkpattern.games
+              </a>{" "}
+              nous rapporte 114 dark patterns (psychologiques, sociaux, économiques, etc.) présents
+              dans le jeu. Pour citer les plus fréquents :
+            </p>
+            <ul>
+              <li>
+                Le taux de change entre l'argent réel et la monnaie du jeu masque le véritable prix
+                des objets. (Obfuscation)
+              </li>
+              <li>Offres à durée limitée créant une urgence artificielle. (Fausse urgence)</li>
+              <li>
+                Être forcé de jouer selon le planning du jeu plutôt que le vôtre. (Engagement forcé)
+              </li>
+              <li>
+                Encourage les visites quotidiennes et vous punit si vous manquez un jour.
+                (Culpabilisation)
+              </li>
+            </ul>
+            <p>
+              Les applications de rencontre ne sont pas en reste. Tinder, par exemple, utilise un
+              système de "swipe" addictif, couplé à des notifications fréquentes sur les "matchs
+              potentiels", créant un sentiment d'urgence et de FOMO (Fear of Missing Out).
+              L'objectif ? Nous pousser à souscrire à des abonnements premium pour voir qui nous a
+              "liké".
+            </p>
           </div>
           <div className="section">
             <h2>Liste de la honte</h2>
             <p>
-              Pour illustrer l'ampleur du problème des Dark Patterns et identifier les acteurs
-              majeurs qui y ont recours, examinons la "Liste de la honte". Cette liste, compilée à
-              partir de diverses sources et rapports, met en lumière les entreprises les plus
-              fréquemment citées pour leur utilisation de Dark Patterns. Le chiffre entre
-              parenthèses indique le nombre de fois où l'entreprise a été signalée pour des
-              pratiques douteuses. Cette liste nous permet de constater que même les géants de la
-              technologie et des médias sociaux, malgré leurs ressources et leur influence, ne sont
-              pas exempts de ces pratiques manipulatrices. Il est important de noter que cette liste
-              est dynamique et évolue au fil du temps, reflétant les changements dans les pratiques
-              des entreprises et la vigilance croissante des utilisateurs et des régulateurs.
+              Pour illustrer l'ampleur du problème des dark patterns et identifier les acteurs
+              majeurs qui y ont recours, examinons la "Liste de la honte". Cette liste, composée à
+              grâce à diverses sources et rapports, met en lumière les entreprises les plus
+              fréquemment citées pour leur utilisation de dark patterns. Cette liste nous permet de
+              constater que même les géants de la tech et les réseaux sociaux, malgré leurs
+              ressources et leur influence, ne sont pas exempts de ces pratiques manipulatrices :
+              bien au contraire. Il est important de noter que cette liste est dynamique et évolue
+              au fil du temps, reflétant les changements dans les pratiques des entreprises et la
+              vigilance croissante des utilisateurs et des régulateurs.
             </p>
             <div className="list">
               <Fb />

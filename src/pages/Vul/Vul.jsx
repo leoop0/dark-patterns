@@ -11,7 +11,9 @@ function Vul() {
         <div className="title">
           <h1>Vulnérabilités psychologiques</h1>
           <p>
-            This is a secondary page preview. As evident, content is displayed on this type of page.
+            On entend souvent parler de mécanismes et leviers psychologiques dans le domaine du
+            marketing et de la publicité. Mais comment ces concepts sont-ils exploités pour
+            manipuler les utilisateurs à travers les dark patterns ?
           </p>
         </div>
         <div className="content">
@@ -111,7 +113,7 @@ function Vul() {
           <div className="section">
             <h2>Impact psychologique</h2>
             <p>
-              Les Dark Patterns ont des conséquences psychologiques significatives, dépassant la
+              Les dark patterns ont des conséquences psychologiques significatives, dépassant la
               simple frustration momentanée. Leur utilisation répandue engendre une méfiance
               générale envers les technologies numériques, créant un sentiment de perte de contrôle
               et d'impuissance chez les utilisateurs. Cette manipulation constante peut affecter
@@ -124,7 +126,7 @@ function Vul() {
               numérique, sont particulièrement à risque.
             </p>
             <p>
-              En somme, les Dark Patterns ne se contentent pas de manipuler ponctuellement ; ils
+              En somme, les dark patterns ne se contentent pas de manipuler ponctuellement ; ils
               façonnent durablement la relation des utilisateurs avec la technologie, affectant leur
               confiance et leur bien-être émotionnel.
             </p>
