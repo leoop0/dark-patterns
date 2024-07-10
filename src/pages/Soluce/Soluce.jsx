@@ -85,6 +85,37 @@ function Soluce() {
             </p>
           </div>
           <div className="section">
+            <h2>Comment se protéger en tant qu'utilisateur ?</h2>
+            <p>
+              Voici quelques exemples de réflexes à prendre pour ne pas se laisser piéger par les
+              dark patterns.
+            </p>
+            <ul>
+              <li>
+                Bien regarder les cases à cocher par défaut. Cela prend un peu plus de temps mais
+                peut vous éviter bien des ennuis.
+              </li>
+              <li>
+                Faire attention à l’ergonomie de chaque site. Certaines fois, les boutons “annuler”
+                et “valider” sont inversés, de manière à ce que vous cliquiez sur le mauvais.
+              </li>
+              <li>
+                Ne pas cliquer trop vite sur un bouton ou un lien dans un article. Si la page n’a
+                pas fini de se charger, vous risquez de cliquer sur une pub qui s’affiche en plein
+                milieu du contenu.
+              </li>
+              <li>
+                Ne pas hésiter à revenir en arrière. Quand un contenu s’affiche en plein écran,
+                qu’il vous bloque dans votre navigation, n’hésitez pas à user de votre touche
+                “echap” ou “esc”.
+              </li>
+              <li>
+                Alerter son entourage, surtout ceux qui sont des novices de l’internet et qui sont
+                plus susceptibles de tomber dans ces pièges bien rodés.
+              </li>
+            </ul>
+          </div>
+          <div className="section">
             <p>
               En somme, la lutte contre les dark patterns exige une approche globale, mêlant
               prévention, éducation et répression. C'est un effort collectif qui nécessite la

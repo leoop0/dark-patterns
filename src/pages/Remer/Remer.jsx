@@ -32,6 +32,7 @@ function Remer() {
               suis ravi. J'ai hâte de voir ce que l'avenir me réserve, que ce soit en CDI ou en
               freelance.
             </p>
+            <p>Salut :)</p>
           </div>
         </div>
       </div>

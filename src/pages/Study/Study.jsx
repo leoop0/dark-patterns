@@ -5,6 +5,11 @@ import Footer from "../../components/Footer/Footer";
 
 import PrimeLogo from "../../assets/img/prime.png";
 import Ufc from "../../assets/img/ufc.png";
+import Rsl from "../../assets/img/rsltinder.png";
+import Booking from "../../assets/img/booking.png";
+import Top from "../../assets/img/top.png";
+import Airbnb from "../../assets/img/airbnb.png";
+import Google from "../../assets/img/google.mp4";
 
 import { ReactComponent as Fb } from "../../assets/logos/fb.svg";
 import { ReactComponent as Adobe } from "../../assets/logos/adobe.svg";
@@ -122,21 +127,31 @@ function Study() {
               intéressants.
             </p>
             <p>
-              Google : Google Ads retarderait légèrement l'affichage des publicités pour inciter les
-              utilisateurs à cliquer dessus, les confondant avec des résultats organiques
+              <span className="bold">Google</span> : Google Ads retarderait légèrement l'affichage
+              des publicités pour inciter les utilisateurs à cliquer dessus, les confondant avec des
+              résultats organiques
             </p>
+            <video src={Google} controls></video>
             <p>
-              Booking : affiche souvent des messages comme "Plus que 2 chambres disponibles !" ou un
-              compte à rebours pour créer un faux sentiment d'urgence et pousser à la réservation
-              rapide.
+              <span className="bold">Booking</span> : affiche souvent des messages comme "Plus que 2
+              chambres disponibles !" ou un compte à rebours pour créer un faux sentiment d'urgence
+              et pousser à la réservation rapide.
             </p>
+            <img src={Booking} alt="" />
             <p>
-              Airbnb : accusé de cacher des couts, des frais de service et des taxes dans les
-              dernières étapes de la réservation.
+              <span className="bold">Airbnb</span> : accusé de cacher des couts, des frais de
+              service et des taxes dans les dernières étapes de la réservation.
             </p>
+            <img src={Airbnb} alt="" />
+            <p>
+              Dernier exemple très pernicieux : il n'y a aucun cheveux sur votre écran. Mais lorsque
+              vous allez chercher à l'enlever en balayant l'écran, vous ouvrirez la publicité.
+            </p>
+            <img src={Top} alt="" />
           </div>
           <div className="section">
             <h2>Dark patterns dans les applications mobiles</h2>
+            <img src={Rsl} alt="" />
             <p>
               Si les sites web sont souvent pointés du doigt pour leur utilisation de dark patterns,
               les applications mobiles ne sont pas en reste. Avec l'omniprésence des smartphones,
