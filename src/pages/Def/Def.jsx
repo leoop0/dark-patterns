@@ -23,10 +23,10 @@ function Def() {
           </p>
         </div>
         <div className="content">
-          <div className="section">
+          <div className="section" id="1">
             <h2>Qu'est-ce que c'est ?</h2>
             <p>
-              N’avez vous jamais trouvé compliqué de se désabonner d’un service ou d’un abonnement
+              N’avez vous jamais trouvé compliqué de vous désabonner d’un service ou d’un abonnement
               sur Internet ? De commander un produit sans être assailli d’autres offres “exclusives”
               avec l’intention de toujours vous faire dépenser plus ? Ou encore le jour où vous avez
               voulu profiter d’une période d’essai gratuite avant de vous faire débiter car aucune
@@ -43,7 +43,7 @@ function Def() {
               <img src={Harry} alt="" />
               <p>
                 Introduits en 2010 par Harry Brignull, un spécialiste UX, les dark patterns,
-                également appelés les Deceptive Patterns représentent des interfaces conçues
+                également appelés les deceptive patterns représentent des interfaces conçues
                 délibérément pour tromper ou manipuler les utilisateurs.
               </p>
             </div>
@@ -129,7 +129,7 @@ function Def() {
               et mercantile.
             </p>
           </div>
-          <div className="section">
+          <div className="section" id="3">
             <h2>Nudge ou dark pattern ?</h2>
             <p>
               Rappelons d’abord ce qu’est un nudge (ou coup de coude) : un outil de “suggestion”

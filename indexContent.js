@@ -62,7 +62,7 @@ const fileToRoute = {
   "Vul/Vul.jsx": "/vulnerabilites-psychologiques",
   "Study/Study.jsx": "/etude-cas-exemples",
   "Law/Law.jsx": "/defis-ethiques",
-  "Soluce/Soluce.jsx": "/pistes-solutions",
+  "Soluce/Soluce.jsx": "/solutions",
   "Conc/Conc.jsx": "/conclusion",
 };
 

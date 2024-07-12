@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Home.scss";
 
 import { ReactComponent as Brain } from "../../assets/ico/brain.svg";
@@ -8,9 +8,36 @@ import { ReactComponent as Heart } from "../../assets/ico/heart.svg";
 import { ReactComponent as Scale } from "../../assets/ico/scale.svg";
 import { ReactComponent as Search } from "../../assets/ico/search.svg";
 import { ReactComponent as Arrow } from "../../assets/ico/arrow.svg";
+import { ReactComponent as X } from "../../assets/ico/x.svg";
 import Footer from "../../components/Footer/Footer";
 
 function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const modalRef = useRef();
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
+
+  const handleClickOutside = (event) => {
+    if (modalRef.current && !modalRef.current.contains(event.target)) {
+      setIsModalOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = "hidden";
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.body.style.overflow = "auto";
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isModalOpen]);
+
   return (
     <div className="Home">
       <div className="wrapper">
@@ -28,40 +55,82 @@ function Home() {
         <div className="page-layout summary-container">
           <div className="summary">
             <a href="/definition-identification" className="part">
-              <Book /> <h4>Définition et identification</h4>
+              <Book /> <h4>1. Définition et identification</h4>
               <Arrow className="arrow" />
             </a>
             <a href="/vulnerabilites-psychologiques" className="part">
-              <Brain /> <h4>Vulnérabilités psychologiques</h4>
+              <Brain /> <h4>2. Vulnérabilités psychologiques</h4>
               <Arrow className="arrow" />
             </a>
             <a href="/etude-cas-exemples" className="part">
-              <Search /> <h4>Étude de cas et exemples</h4>
+              <Search /> <h4>3. Étude de cas et exemples</h4>
               <Arrow className="arrow" />
             </a>
             <a href="/defis-ethiques" className="part">
-              <Scale /> <h4>Défis éthiques</h4>
+              <Scale /> <h4>4. Défis éthiques</h4>
               <Arrow className="arrow" />
             </a>
-            <a href="/pistes-solutions" className="part">
-              <Bulb /> <h4>Pistes de solutions</h4>
+            <a href="/solutions" className="part">
+              <Bulb /> <h4>5. Solutions envisagées</h4>
               <Arrow className="arrow" />
             </a>
             <a href="/conclusion" className="part">
-              <Heart /> <h4>Conclusion</h4>
+              <Heart /> <h4>6. Conclusion</h4>
               <Arrow className="arrow" />
             </a>
           </div>
         </div>
+
+        {/* BOUTON ICI */}
+        <button className="modal-btn" onClick={toggleModal}>
+          Note de synthèse 🇬🇧
+        </button>
+        {isModalOpen && (
+          <div className="modal" ref={modalRef}>
+            <div className="modal-content">
+              <div className="btn">
+                <h3>Summary note</h3>
+                <button onClick={toggleModal}>
+                  <X />
+                </button>
+              </div>
+              <p>
+                As someone with strong social convictions, I felt it was important to talk about it.
+                Because beyond the purely technical aspect of dark patterns, I'm very interested in
+                their impact and the biases used to implement them.
+                <br />
+                <br />
+                These abusive design techniques are used by many companies, and I wanted to
+                highlight them. Both to denounce these practices, but also to raise awareness among
+                users.
+                <br />
+                <br />
+                I'm aware that this white paper may seem a little pessimistic, but I think it's
+                important to talk about these issues without minimizing them. The UX Designer
+                profession is fascinating, but it's also subject to a lot of drift, debate and
+                questioning.
+                <br />
+                <br />
+                This white paper is above all intended to popularize, raise awareness and inform
+                about dark patterns. I hope you'll enjoy reading it as much as I enjoyed writing it,
+                and that my work will provide food for thought.
+                <br />
+                <br />
+                PS: for the curious, this site is developed with React, without any third-party
+                framework.
+              </p>
+            </div>
+          </div>
+        )}
 
         <div className="page-layout">
           <div className="content">
             <div className="section">
               <h2>A propos de moi</h2>
               <p>
-                Je m'appelle Léo Frati, j'ai 23 ans et je suis passionné par une tonne de choses. De
-                la tech à la montagne, en passant par la musique et l'escalade, j'aime énormément
-                découvrir et apprendre.
+                Je m'appelle Léo Frati, j'ai 23 ans et je suis passionné par une multitude de
+                choses. De la tech à la montagne, en passant par la musique et l'escalade, j'aime
+                énormément découvrir et apprendre.
               </p>
               <p>
                 Pour parler de moi sans évoquer l'aspect travail, je suis un grand passionné de
@@ -79,7 +148,7 @@ function Home() {
               <p>
                 Ayant de fortes convictions sociales, il me paraissait important d'en parler. Car au
                 délà de l'aspect purement technique des dark patterns, leur impact et les biais mis
-                en place pour les utiliser m'intéresse grandement.
+                en place pour les utiliser m'intéressent grandement.
               </p>
               <p>
                 Ces techniques de conception abusives sont utilisées par de nombreuses entreprises
@@ -93,9 +162,9 @@ function Home() {
                 questionnements.
               </p>
               <p>
-                J'espère que mon travail vous plaira, j'y ai investi beaucoup de temps, d'énérgie et
-                de passion. N'hésitez pas à me contacter si vous avez des questions ou des
-                remarques, je serais ravi d'échanger avec vous.
+                Ce livre blanc est avant tout destiné à vulgariser, sensibiliser et informer sur les
+                dark patterns. J'espère que vous prendrez autant de plaisir à le lire que j'en ai eu
+                à le realiser et que mes travaux viendront nourrir votre réflexion.
               </p>
               <p>
                 PS : pour les curieux, ce site est développé avec React, sans aucun framework tiers.

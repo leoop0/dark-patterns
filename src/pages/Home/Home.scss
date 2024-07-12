@@ -102,3 +102,76 @@
     pointer-events: none;
   }
 }
+
+.modal-btn {
+  grid-column-gap: 0.5rem;
+  background-color: #000490;
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0.625rem 1.125rem;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  display: flex;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #0b26b5;
+  }
+}
+
+.modal {
+  position: absolute;
+  background-color: #00023c75;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .modal-content {
+    background-color: white;
+    width: 70%;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 12px;
+  }
+  .btn {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-family: "Sk-Modernist";
+    color: #000490;
+  }
+
+  p {
+    color: #0b26b5;
+  }
+
+  button {
+    background-color: #000490;
+    color: white;
+    border: none;
+    width: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 26px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #0b26b5;
+    }
+  }
+}

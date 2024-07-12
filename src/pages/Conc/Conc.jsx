@@ -14,44 +14,41 @@ function Conc() {
         <div className="content">
           <div className="section">
             <p>
-              Au terme de cette exploration approfondie des dark patterns, il apparaît clairement
-              que ces pratiques manipulatrices représentent un défi majeur pour l'éthique du
-              numérique. Loin d'être de simples astuces de design, les dark patterns exploitent nos
-              vulnérabilités psychologiques, compromettent notre autonomie en ligne et érodent la
-              confiance que nous accordons aux technologies numériques.
+              Au terme de notre plongée dans l'univers des dark patterns, une évidence s'impose :
+              ces pratiques insidieuses représentent{" "}
+              <span className="bold">bien plus qu'un simple défi technique</span>. Elles sont un
+              véritable enjeu éthique pour notre société numérique.
             </p>
             <p>
-              L'impact de ces pratiques va bien au-delà de l'expérience utilisateur immédiate. Elles
-              façonnent notre relation avec le numérique, influencent nos comportements et peuvent
-              avoir des conséquences durables sur notre bien-être psychologique. Les populations
-              vulnérables (les personnes agées par exemple), en particulier, courent le risque
-              d'être disproportionnellement affectées, creusant ainsi les inégalités et la fracture
-              numérique exsitante.
+              Ces techniques manipulatrices s'infiltrent dans les recoins de nos appareils, jouant
+              avec notre libre arbitre et grignotant peu à peu la confiance que nous accordons aux
+              technologies qui nous entourent. Leur impact dépasse largement le cadre d'une simple
+              expérience utilisateur frustrante. En réalité, elles{" "}
+              <span className="bold">façonnent en profondeur notre relation au monde digital</span>,
+              influençant nos comportements bien au-delà de l'écran. Et ce sont souvent les plus
+              vulnérables d'entre nous qui en paient le prix fort, creusant davantage les inégalités
+              et la fracture numérique.
             </p>
             <p>
-              Face à ces enjeux, une approche multidimensionnelle s'impose. La sensibilisation et
-              l'éducation des utilisateurs, la promotion de pratiques de conception éthiques, le
-              renforcement du cadre légal et la mise en place de sanctions dissuasives sont autant
-              de leviers à actionner. Cependant, la véritable transformation ne pourra venir que
-              d'un réel changement dans la conception des interfaces numériques, où l'éthique et le
-              respect de l'utilisateur seront placés au centre des préoccupations.
+              Face à ce constat, une <span className="bold">approche multidimensionnelle</span>{" "}
+              s'impose. Éducation des utilisateurs, promotion de pratiques de conception éthiques,
+              renforcement du cadre légal : autant de leviers à activer. Mais ne nous y trompons
+              pas, la véritable révolution viendra d'un changement des méthodes de conception UI et
+              UX. Il est temps de placer l'éthique et le respect de l'utilisateur au cœur de nos
+              préoccupations.
             </p>
             <p>
-              L'avenir du numérique dépend de notre capacité collective à créer des environnements
-              en ligne transparents, respectueux et centrés sur l'humain.
-            </p>
-            <p>
-              Le chemin vers un web plus éthique est long, mais chaque pas compte. Que vous soyez
-              designer, développeur, décideur ou simple utilisateur, vous avez un rôle à jouer dans
-              cette transformation. Les dark patterns ne sont pas une fatalité : nous pouvons les
-              combattre et façonner un web plus éthique pour tous.
+              L'avenir du web est entre nos mains. Que nous soyons designers, développeurs,
+              décideurs ou simples utilisateurs, nous avons{" "}
+              <span className="bold">tous un rôle à jouer</span> dans cette transformation.
+              Ensemble, nous pouvons façonner un web plus éthique et respectueux de tous.
             </p>
           </div>
         </div>
       </div>
       <Footer
-        prevLabel="Pistes de solutions"
-        prevLink="pistes-solutions"
+        prevLabel="Solutions envisagées"
+        prevLink="solutions"
         nextLabel="Remerciements"
         nextLink="remerciements"
       />

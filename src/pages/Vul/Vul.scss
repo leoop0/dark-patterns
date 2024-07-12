@@ -93,3 +93,34 @@
     }
   }
 }
+
+.law {
+  background: url("../../assets/misc/noise-bg.png") 100px 100px repeat;
+  background-color: #000490;
+  display: grid;
+  padding: 30px;
+  gap: 30px;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: center;
+
+  img,
+  svg {
+    width: 100%;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px !important;
+    h4 {
+      color: white;
+      font-size: 26px;
+      font-weight: 600;
+      font-family: "Sk-Modernist";
+    }
+
+    p {
+      color: white !important;
+    }
+  }
+}

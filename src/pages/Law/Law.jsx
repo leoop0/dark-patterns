@@ -18,16 +18,16 @@ function Law() {
           </p>
         </div>
         <div className="content">
-          <div className="section">
+          <div className="section" id="1">
             <h2>Consentement des utilisateurs</h2>
 
             <p>
               “Cliquez ici pour accepter nos termes d’utilisation”, “Cochez cette case pour accepter
               notre newsletter”, “Acceptez-vous les cookies sur notre site ?” Des phrases que nous
               avons tous lues et relues sans cesse sur internet au cours des dernières années. Ces
-              messages sont devenus omniprésents, dans le simple but d’obtenir le consentement des
-              utilisateurs pour diverses actions, de l'acceptation des cookies à l'abonnement à des
-              services.
+              messages sont devenus omniprésents, dans le simple but d’obtenir le{" "}
+              <span className="bold">consentement des utilisateurs</span> pour diverses actions, de
+              l'acceptation des cookies à l'abonnement à des services.
             </p>
             <p>
               Le consentement des utilisateurs est un enjeu éthique majeur car il doit être éclairé,
@@ -35,17 +35,17 @@ function Law() {
               critères. Par exemple, les informations importantes sont souvent masquées ou écrites
               dans un langage juridique complexe, rendant difficile la compréhension par les
               utilisateurs de ce à quoi ils consentent vraiment. Des pratiques comme l’utilisation
-              de longues conditions générales remplies de jargon sont courantes, empêchant une
-              compréhension claire et complète.
+              de longues conditions générales remplies de jargon sont courantes,{" "}
+              <span className="bold">empêchant une compréhension claire et complète</span>.
             </p>
             <p>
               Si ces pratiques semblent de prime abord être de bonnes initiatives pour les
-              utilisateurs, elles résultent en réalité pour la plupart d’obligations légales,
-              principalement en Union Européenne grâce à la Réglementation Générale sur la
-              Protection des Données (RGPD)
+              utilisateurs, elles résultent en réalité pour la plupart{" "}
+              <span className="bold">d’obligations légales</span>, principalement en Union
+              Européenne grâce à la Réglementation Générale sur la Protection des Données (RGPD)
             </p>
           </div>
-          <div className="section">
+          <div className="section" id="2">
             <h2>Cadre légal</h2>
             <img src={Cnil} alt="" />
             <p>
@@ -80,8 +80,8 @@ function Law() {
       <Footer
         prevLabel="Étude de cas et exemples"
         prevLink="etude-cas-exemples"
-        nextLabel="Pistes de solutions"
-        nextLink="pistes-solutions"
+        nextLabel="Solutions envisagées"
+        nextLink="solutions"
       />
     </div>
   );

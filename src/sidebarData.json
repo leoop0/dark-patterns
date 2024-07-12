@@ -39,10 +39,14 @@
     "url": "/defis-ethiques"
   },
   {
-    "title": "Pistes de solutions",
-    "items": [],
+    "title": "Solutions envisagées",
+    "items": [
+      { "name": "Atténuer leur utilisation", "id": "1" },
+      { "name": "L'éducation numérique", "id": "2" },
+      { "name": "Se protéger", "id": "3" }
+    ],
     "icon": "Bulb",
-    "url": "/pistes-solutions"
+    "url": "/solutions"
   },
   {
     "title": "Conclusion",

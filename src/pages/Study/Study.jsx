@@ -36,7 +36,7 @@ function Study() {
           </p>
         </div>
         <div className="content">
-          <div className="section">
+          <div className="section" id="1">
             <h2>Le cas Amazon Prime</h2>
             <img src={PrimeLogo} alt="" />
             <p>
@@ -53,16 +53,16 @@ function Study() {
             </p>
             <h3>Processus d'abonnement</h3>
             <p>Léa, ayant souscrit sans le vouloir à Amazon Prime nous dit : </p>
-            <div class="imessage">
-              <p class="from-them">
+            <div className="imessage">
+              <p className="from-them">
                 Je me suis inscrite à Amazon Prime pour avoir la livraison gratuite et en 1 jour.
                 J'ai pas pensé à mettre de rappel pour annuler l'abonnement avant la fin des 30
                 jours gratuits et comme ils préviennent pas, bah j'ai payé 49€ pour rien 🤡
                 <br />
                 J'utilise quasiment pas Amazon, ni prime vidéo
               </p>
-              <p class="from-me">Est-ce que tu as eu l'impression de te faire arnaquer ?</p>
-              <p class="from-them margin-b_one">
+              <p className="from-me">Est-ce que tu as eu l'impression de te faire arnaquer ?</p>
+              <p className="from-them margin-b_one">
                 Ah oui oui, je me suis senti très conne, "en mode moi je travaille dans l'UX et je
                 viens de me faire avoir comme ça ??? 🥲"
               </p>
@@ -73,9 +73,7 @@ function Study() {
             </p>
             <p>
               Et c'est là tout le problème. Les utilisateurs, même les plus avertis, peuvent être
-              victimes de ces pratiques trompeuses. Les dark patterns exploitent les biais cognitifs
-              et les vulnérabilités psychologiques des utilisateurs pour les inciter à prendre des
-              décisions qui ne sont pas dans leur intérêt.
+              victimes de ces pratiques trompeuses.
             </p>
             <p>
               Si s'abonner est extrêmement facile, se désabonner est en revanche bien plus
@@ -93,10 +91,10 @@ function Study() {
               nous rappeler la loi de de Fitts.
             </p>
             <p>
-              L’UFC que choisir s’était d’ailleurs penchée sur le sujet et suite à une action en
-              lien avec le Bureau européen des Unions de Consommateurs contre les obstacles au
-              désabonnement d’Amazon Prime, la société se met enfin en conformité avec le droit
-              européen.
+              L’UFC que choisir s’était d’ailleurs penché sur le sujet et suite à une action en lien
+              avec le Bureau Européen des Unions de Consommateurs contre les obstacles au
+              désabonnement d’Amazon Prime. Apruès une bataille juridique, la société se met enfin
+              en conformité avec le droit européen.
             </p>
             <a
               href="https://www.quechoisir.org/billet-du-president-amazon-prime-le-piege-a-utilisateur-supprime-n102144/"
@@ -114,13 +112,10 @@ function Study() {
             <p>
               L'exemple d'Amazon Prime illustre comment les entreprises peuvent utiliser des dark
               patterns pour maximiser leurs profits, souvent au détriment de la transparence et de
-              la satisfaction des utilisateurs. Pour maintenir la confiance des utilisateurs, il est
-              essentiel que les entreprises simplifient les processus de désabonnement et
-              fournissent des informations claires et accessibles sur les conditions des
-              abonnements.
+              la satisfaction des utilisateurs.
             </p>
           </div>
-          <div className="section">
+          <div className="section" id="2">
             <h2>Exemples concrets</h2>
             <p>
               Penchons nous maintenant sur d’autres exemples plus brefs, mais tout aussi
@@ -149,7 +144,7 @@ function Study() {
             </p>
             <img src={Top} alt="" />
           </div>
-          <div className="section">
+          <div className="section" id="3">
             <h2>Dark patterns dans les applications mobiles</h2>
             <img src={Rsl} alt="" />
             <p>
@@ -188,6 +183,7 @@ function Study() {
                 (Culpabilisation)
               </li>
             </ul>
+            <h3>Tinder</h3>
             <p>
               Les applications de rencontre ne sont pas en reste. Tinder, par exemple, utilise un
               système de "swipe" addictif, couplé à des notifications fréquentes sur les "matchs
@@ -206,8 +202,7 @@ function Study() {
               constater que même les géants de la tech et les réseaux sociaux, malgré leurs
               ressources et leur influence, ne sont pas exempts de ces pratiques manipulatrices :
               bien au contraire. Il est important de noter que cette liste est dynamique et évolue
-              au fil du temps, reflétant les changements dans les pratiques des entreprises et la
-              vigilance croissante des utilisateurs et des régulateurs.
+              au fil du temps.
             </p>
             <div className="list">
               <Fb />

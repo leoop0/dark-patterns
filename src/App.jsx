@@ -42,7 +42,7 @@ const App = () => {
               <Route path="/vulnerabilites-psychologiques" element={<Vul />} />
               <Route path="/etude-cas-exemples" element={<Study />} />
               <Route path="/defis-ethiques" element={<Law />} />
-              <Route path="/pistes-solutions" element={<Soluce />} />
+              <Route path="/solutions" element={<Soluce />} />
               <Route path="/conclusion" element={<Conc />} />
               <Route path="/remerciements" element={<Remer />} />
             </Routes>
