@@ -59,3 +59,18 @@ footer {
     color: #00059094;
   }
 }
+
+@media screen and (max-width: 768px) {
+  footer {
+    .footer {
+      .pagination {
+        flex-direction: column;
+        align-items: center;
+
+        .prev {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

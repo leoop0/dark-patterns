@@ -24,7 +24,8 @@
     "items": [
       { "name": "Le cas Amazon Prime", "id": "1" },
       { "name": "Exemples concrets", "id": "2" },
-      { "name": "Liste de la honte", "id": "3" }
+      { "name": "Applications mobiles", "id": "3" },
+      { "name": "Liste de la honte", "id": "4" }
     ],
     "icon": "Search",
     "url": "/etude-cas-exemples"

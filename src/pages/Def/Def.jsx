@@ -28,28 +28,37 @@ function Def() {
             <p>
               N’avez vous jamais trouvé compliqué de vous désabonner d’un service ou d’un abonnement
               sur Internet ? De commander un produit sans être assailli d’autres offres “exclusives”
-              avec l’intention de toujours vous faire dépenser plus ? Ou encore le jour où vous avez
-              voulu profiter d’une période d’essai gratuite avant de vous faire débiter car aucune
-              notification ne vous a été envoyée pour vous informer de la reconduction de
-              l’abonnement ?
+              avec l’intention de toujours <span className="bold">vous faire dépenser plus</span> ?
+              Ou encore le jour où vous avez voulu profiter d’une période d’essai gratuite avant de
+              vous faire débiter car aucune notification ne vous a été envoyée pour vous informer de
+              la reconduction de l’abonnement ?
             </p>
             <p>
-              Évidemment que cela vous est déjà arrivé, ça nous arrive à tous. Que ce soit une
-              personne âgée perdue sur le web ou le développeur le plus aguerri, nous sommes tous
-              victimes de nos propres biais et de la façon dont ils sont exploités par de nombreuses
-              entreprises.
+              Évidemment que cela vous est déjà arrivé,{" "}
+              <span className="bold">ça nous arrive à tous</span>. Que ce soit une personne âgée
+              perdue sur le web ou le développeur le plus aguerri, nous sommes tous victimes de{" "}
+              <span className="bold">nos propres biais</span> et de la façon dont ils sont exploités
+              par de nombreuses entreprises.
             </p>
             <div className="grid-vignette">
               <img src={Harry} alt="" />
               <p>
                 Introduits en 2010 par Harry Brignull, un spécialiste UX, les dark patterns,
-                également appelés les deceptive patterns représentent des interfaces conçues
-                délibérément pour tromper ou manipuler les utilisateurs.
+                également appelés les deceptive patterns représentent{" "}
+                <span className="bold">
+                  des interfaces conçues délibérément pour tromper ou manipuler les utilisateurs
+                </span>
+                .
               </p>
             </div>
             <p>
-              Et c’est dans cette quête de sensibilisation et de protection des utilisateurs que
-              Harry Brignull a fondé le site deceptive.design (anciennement darkpatterns.org).
+              Et c’est dans cette quête de{" "}
+              <span className="bold">sensibilisation et de protection</span> des utilisateurs que
+              Harry Brignull a fondé le site{" "}
+              <a href="https://www.deceptive.design/" target="_blank" rel="noreferrer">
+                deceptive.design
+              </a>{" "}
+              (anciennement darkpatterns.org).
             </p>
             <p>
               Afin de se faire une idée plus précise, voyons ensemble quelques exemples globaux :
@@ -101,10 +110,11 @@ function Def() {
             <h2>Pourquoi on les utilise</h2>
             <p>
               On pourrait se demander pourquoi mettre en place ces interfaces trompeuses ? En
-              réalité le raisonnement des entreprises est simple : ça fonctionne et ça rapporte.
-              Donc, tant qu’on ne se fait pas prendre, on continue. C’est la principale raison pour
-              laquelle les dark patterns sont essentiellement exploités sur les sites et
-              applications avec un traffic massif.
+              réalité le raisonnement des entreprises est simple :{" "}
+              <span className="bold">ça fonctionne et ça rapporte</span>. Donc, tant qu’on ne se
+              fait pas prendre, on continue. C’est la principale raison pour laquelle les dark
+              patterns sont essentiellement exploités sur les sites et applications avec un{" "}
+              <span className="bold">traffic massif</span>.
             </p>
             <p>
               Pour détailler un peu plus ce point, voilà quelques raisons spécifiques pour
@@ -126,23 +136,25 @@ function Def() {
             </ul>
             <p>
               En bref, le principal but des sites et applications qui se servent des dark patterns
-              et mercantile.
+              est mercantile.
             </p>
           </div>
           <div className="section" id="3">
             <h2>Nudge ou dark pattern ?</h2>
             <p>
               Rappelons d’abord ce qu’est un nudge (ou coup de coude) : un outil de “suggestion”
-              disposé dans notre environnement, supposé nous aider à faire les bons choix, dans
-              notre intérêt ou celui de la société
+              disposé dans notre environnement, supposé nous aider à{" "}
+              <span className="bold">faire les bons choix</span>, dans notre intérêt ou celui de la
+              société
             </p>
             <p>
               Si les nudges et les dark patterns sont similaires dans leur mise en place, leurs
               objectifs sont pourtant diamétralement opposés. Comme nous l’avons vu précédemment, le
               but du dark pattern est d’induire en erreur un utilisateur pour le pousser à faire un
-              choix non réfléchi, parfois même contre sa volonté. Le nudge quant à lui incite les
-              individus à adopter un comportement ou faire certains choix mais sans mettre de
-              contrainte, d’obligation ou de menace de sanction. Et là est toute la différence.
+              choix non réfléchi, parfois même <span className="bold">contre sa volonté</span>. Le
+              nudge quant à lui incite les individus à adopter un comportement ou faire certains
+              choix mais <span className="bold">sans mettre de contrainte</span>, d’obligation ou de
+              menace de sanction. Et là est toute la différence.
             </p>
             <p>
               Pour résumer, un nudge vise à améliorer le bien-être de l'individu ou de la société en
@@ -154,7 +166,8 @@ function Def() {
             </p>
             <p>
               En revanche, les dark patterns cherchent à manipuler l'utilisateur à des fins souvent
-              financières ou commerciales, en profitant de ses biais cognitifs.
+              financières ou commerciales, en profitant de ses{" "}
+              <span className="bold">biais cognitifs</span>.
             </p>
           </div>
         </div>

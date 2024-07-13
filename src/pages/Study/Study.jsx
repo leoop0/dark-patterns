@@ -46,10 +46,10 @@ function Study() {
             <p>
               Amazon propose régulièrement une période d'essai gratuite pour Prime, attirant les
               utilisateurs avec des avantages attrayants qui, de prime abord sont sans frais.
-              Cependant, aucune notification explicite n’est envoyée à la fin de la période d'essai,
-              ce qui pousse les utilisateurs à reconduire leur abonnement sans réelle volonté de le
-              faire, à moins qu'ils n'annulent leur abonnement à temps. Cette pratique tire parti de
-              l'inattention ou de l'oubli des utilisateurs.
+              Cependant, <span className="bold">aucune notification explicite n’est envoyée</span> à
+              la fin de la période d'essai, ce qui pousse les utilisateurs à reconduire leur
+              abonnement sans réelle volonté de le faire, à moins qu'ils n'annulent leur abonnement
+              à temps. Cette pratique tire parti de l'inattention ou de l'oubli des utilisateurs.
             </p>
             <h3>Processus d'abonnement</h3>
             <p>Léa, ayant souscrit sans le vouloir à Amazon Prime nous dit : </p>
@@ -68,8 +68,8 @@ function Study() {
               </p>
             </div>{" "}
             <p>
-              Si ce verbatim peut prêter à sourire, il est pourtant très important et témoigne de
-              l'état d'esprit des utilisateurs face à ces pratiques.
+              Si ce verbatim peut prêter à sourire, il est pourtant très important et témoigne de{" "}
+              <span className="bold">l'état d'esprit des utilisateurs</span> face à ces pratiques.
             </p>
             <p>
               Et c'est là tout le problème. Les utilisateurs, même les plus avertis, peuvent être
@@ -82,19 +82,24 @@ function Study() {
             <h3>Processus de désabonnement</h3>
             <p>
               Le processus de désabonnement d'Amazon Prime est notoirement complexe. Les
-              utilisateurs doivent naviguer à travers plusieurs pages pour pouvoir espérer résilier
-              leur abonnement. À chaque étape des messages encouragent les utilisateurs à
-              reconsidérer leur décision, mettant en avant les avantages qu'ils perdraient en
-              annulant l'abonnement. Des boutons primaires, bien visibles pour conserver
-              l'abonnement sont placés stratégiquement et bien en vue, tandis que les options de
-              désabonnement sont moins visibles et nécessitent plus de clics. Ce qui n’est pas sans
-              nous rappeler la loi de de Fitts.
+              utilisateurs doivent naviguer à travers <span className="bold">plusieurs pages</span>{" "}
+              pour pouvoir espérer résilier leur abonnement. À chaque étape des messages{" "}
+              <span className="bold">
+                encouragent les utilisateurs à reconsidérer leur décision
+              </span>
+              , mettant en avant les avantages qu'ils perdraient en annulant l'abonnement. Des
+              boutons primaires, bien visibles pour conserver l'abonnement sont placés
+              stratégiquement et bien en vue, tandis que{" "}
+              <span className="bold">les options de désabonnement sont moins visibles</span> et
+              nécessitent plus de clics. Ce qui n’est pas sans nous rappeler la{" "}
+              <span className="bold">loi de de Fitts</span>.
             </p>
             <p>
               L’UFC que choisir s’était d’ailleurs penché sur le sujet et suite à une action en lien
-              avec le Bureau Européen des Unions de Consommateurs contre les obstacles au
-              désabonnement d’Amazon Prime. Apruès une bataille juridique, la société se met enfin
-              en conformité avec le droit européen.
+              avec le <span className="bold">Bureau Européen des Unions de Consommateurs</span>{" "}
+              contre les obstacles au désabonnement d’Amazon Prime. Apruès une bataille juridique,
+              la société se met enfin en{" "}
+              <span className="bold">conformité avec le droit européen</span>.
             </p>
             <a
               href="https://www.quechoisir.org/billet-du-president-amazon-prime-le-piege-a-utilisateur-supprime-n102144/"
@@ -150,14 +155,17 @@ function Study() {
             <p>
               Si les sites web sont souvent pointés du doigt pour leur utilisation de dark patterns,
               les applications mobiles ne sont pas en reste. Avec l'omniprésence des smartphones,
-              ces pratiques se sont largement répandues sur tous nos appareils.
+              ces pratiques se sont largement répandues sur{" "}
+              <span className="bold">tous nos appareils</span>.
             </p>
             <p>
               Prenons l'exemple des jeux "free-to-play". Beaucoup utilisent des techniques
-              psychologiques poussées pour inciter aux micro-transactions. Des pop-ups apparaissent
+              psychologiques poussées pour{" "}
+              <span className="bold">inciter aux micro-transactions</span>. Des pop-ups apparaissent
               au moment où le joueur est le plus investi, proposant des offres "uniques" pour
               débloquer du contenu ou progresser plus rapidement. Ces interruptions sont conçues
-              pour exploiter notre impulsivité et notre désir de gratification immédiate.
+              pour exploiter notre impulsivité et{" "}
+              <span className="bold">notre désir de gratification immédiate</span>.
             </p>
             <h3>Raid Shadow Legends</h3>
             <p>
@@ -166,8 +174,8 @@ function Study() {
               <a href="https://www.darkpattern.games/game/285/0/raid-shadow-legends.html">
                 darkpattern.games
               </a>{" "}
-              nous rapporte 114 dark patterns (psychologiques, sociaux, économiques, etc.) présents
-              dans le jeu. Pour citer les plus fréquents :
+              nous rapporte <span className="bold">114 dark patterns</span> (psychologiques,
+              sociaux, économiques, etc.) présents dans le jeu. Pour citer les plus fréquents :
             </p>
             <ul>
               <li>
@@ -188,21 +196,27 @@ function Study() {
               Les applications de rencontre ne sont pas en reste. Tinder, par exemple, utilise un
               système de "swipe" addictif, couplé à des notifications fréquentes sur les "matchs
               potentiels", créant un sentiment d'urgence et de FOMO (Fear of Missing Out).
-              L'objectif ? Nous pousser à souscrire à des abonnements premium pour voir qui nous a
-              "liké".
+              L'objectif ? Nous pousser à{" "}
+              <span className="bold">souscrire à des abonnements premium</span> pour voir qui nous a
+              liké.
             </p>
           </div>
-          <div className="section">
+          <div className="section" id="4">
             <h2>Liste de la honte</h2>
             <p>
               Pour illustrer l'ampleur du problème des dark patterns et identifier les acteurs
               majeurs qui y ont recours, examinons la "Liste de la honte". Cette liste, composée à
-              grâce à diverses sources et rapports, met en lumière les entreprises les plus
-              fréquemment citées pour leur utilisation de dark patterns. Cette liste nous permet de
-              constater que même les géants de la tech et les réseaux sociaux, malgré leurs
-              ressources et leur influence, ne sont pas exempts de ces pratiques manipulatrices :
-              bien au contraire. Il est important de noter que cette liste est dynamique et évolue
-              au fil du temps.
+              grâce au site{" "}
+              <a href="https://www.deceptive.design/" target="_blank" rel="noreferrer">
+                deceptive.design
+              </a>
+              , met en lumière les entreprises les plus fréquemment citées pour leur utilisation de
+              dark patterns. Cette liste nous permet de constater que même les géants de la tech et
+              les réseaux sociaux, malgré leurs ressources et leur influence, ne sont pas exempts de
+              ces pratiques manipulatrices : bien au contraire.
+            </p>
+            <p>
+              Il est important de noter que cette liste est dynamique et évolue au fil du temps.
             </p>
             <div className="list">
               <Fb />

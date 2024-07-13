@@ -124,3 +124,32 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .cards-ux {
+    .card {
+      padding: 10px;
+    }
+  }
+
+  .quote {
+    display: flex;
+    padding: 20px;
+    p {
+      font-size: 20px !important;
+    }
+  }
+
+  .law {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    img,
+    svg {
+      width: 100%;
+    }
+  }
+}

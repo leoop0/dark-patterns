@@ -35,33 +35,35 @@ function Vul() {
             </div>
             <p>
               Pour comprendre comment ces dark patterns fonctionnent et sont efficaces sur notre
-              cerveau, il est primordial de s’intéresser aux biais et vulnérabilités que nous
-              possédons tous.
+              cerveau, il est primordial de s’intéresser aux biais et vulnérabilités que{" "}
+              <span className="bold">nous possédons tous</span>.
             </p>
             <p>
-              Un exemple très simple de biais : le prix psychologique. Nous voyons tous les jours
-              des prix bien spécifiques : 29,99 €, 19,99 €, 49,99 €… Ils ne diffèrent que très peu
-              avec 30, 20 ou 50 € mais le prix est naturellement perçu comme plus attrayant par le
-              cerveau.
+              Un exemple très simple de biais : le <span className="bold">prix psychologique</span>.
+              Nous voyons tous les jours des prix bien spécifiques : 29,99 €, 19,99 €, 49,99 €… Ils
+              ne diffèrent que très peu avec 30, 20 ou 50 € mais le prix est naturellement perçu
+              comme <span className="bold">plus attrayant par le cerveau</span>.
             </p>
             <p>
               Les dark patterns exploitent nos biais cognitifs pour influencer nos décisions en
-              ligne. Le biais de rareté nous fait surévaluer ce qui est limité, créant un faux
-              sentiment d'urgence. Le biais d'ancrage manipule notre perception des prix en
-              affichant des réductions trompeuses. L'effet de conformité nous pousse à suivre la
-              majorité supposée, via des témoignages ou des compteurs fictifs. Ces techniques,
-              subtilement intégrées aux interfaces, nous guident vers des actions souvent contraires
-              à nos intérêts réels.
+              ligne. Le <span className="bold">biais de rareté</span> nous fait surévaluer ce qui
+              est limité, créant un faux sentiment d'urgence. Le{" "}
+              <span className="bold">biais d'ancrage</span> manipule notre perception des prix en
+              affichant des réductions trompeuses.{" "}
+              <span className="bold">L'effet de conformité</span> nous pousse à suivre la majorité
+              supposée, via des témoignages ou des compteurs fictifs. Ces techniques, subtilement
+              intégrées aux interfaces, nous guident vers des actions souvent contraires à nos
+              intérêts réels.
             </p>
           </div>
           <div className="section" id="2">
             <h2>Lois UX</h2>
             <p>
               Pour comprendre encore mieux comment ces comportements sont induits, évoquons
-              maintenant quelques lois fondamentales d’UX Design. Ces lois sont des principes
-              utilisés par les designers pour créer des interfaces efficaces, intuitives et
-              agréables. Cependant, ces mêmes lois peuvent être détournées pour créer des dark
-              patterns, exploitant ainsi les biais des utilisateurs.
+              maintenant quelques lois fondamentales <span className="bold">d’UX Design</span>. Ces
+              lois sont des principes utilisés par les designers pour créer des interfaces
+              efficaces, intuitives et agréables. Cependant, ces mêmes lois peuvent être détournées
+              pour créer des dark patterns, exploitant ainsi les biais des utilisateurs.
             </p>
 
             <div className="cards-ux">
@@ -109,10 +111,11 @@ function Vul() {
               </div>
 
               <p>
-                En somme, lorsqu'elles sont appliquées de manière éthique les lois UX améliorent
-                l'expérience utilisateur en rendant les interfaces plus intuitives et accessibles.
-                Cependant, lorsqu'elles sont détournées à des fins manipulatrices, elles deviennent
-                des outils puissants pour créer des dark patterns.
+                En somme, lorsqu'elles sont appliquées de manière{" "}
+                <span className="bold">éthique</span> les lois UX améliorent l'expérience
+                utilisateur en rendant les interfaces plus intuitives et accessibles. Cependant,
+                lorsqu'elles sont détournées à des fins manipulatrices, elles deviennent des{" "}
+                <span className="bold">outils puissants</span> pour créer des dark patterns.
               </p>
             </div>
           </div>
@@ -121,21 +124,17 @@ function Vul() {
             <h2>Impact psychologique</h2>
             <p>
               L'impact psychologique des dark patterns va bien au-delà d'une simple frustration
-              passagère. Leur omniprésence nourrit une méfiance envers la technologie, générant un
-              sentiment de perte de contrôle chez les utilisateurs. Cette manipulation constante
-              peut affecter l'estime de soi et freiner l'envie de découvrir d'autres sites ou
-              application (on peut trouver un exemple très simple : beaucoup de gens n'installent
-              pas TikTok car ils savent qu'ils vont y passer trop de temps étant donné les
-              vulnérabilités que l'application exploite pour nous faire rester). On retrouve donc un
-              risque d'exacerber des comportements addictifs et d'impacter négativement notre santé
-              mentale. Les personnes âgées ou celles ayant une faible maitrise du web sont
-              particulièrement exposées à ces risques, accentuant les inégalités et la fracture
-              numérique.
-            </p>
-            <p>
-              Les dark patterns ne se contentent donc pas de manipuler ponctuellement : ils
-              modifient durablement la relation des utilisateurs avec la technologie, affectant leur
-              confiance et leur bien-être émotionnel.
+              passagère. Leur omniprésence nourrit une{" "}
+              <span className="bold">méfiance envers la technologie</span>, générant un sentiment de
+              perte de contrôle chez les utilisateurs. Cette manipulation constante peut affecter
+              l'estime de soi et freiner l'envie de découvrir d'autres sites ou application (on peut
+              trouver un exemple très simple : beaucoup de gens n'installent pas TikTok car ils
+              savent qu'ils vont y passer trop de temps étant donné les vulnérabilités que
+              l'application exploite pour nous faire rester). On retrouve donc un risque{" "}
+              <span className="bold">d'exacerber des comportements addictifs</span> et{" "}
+              <span className="bold">d'impacter négativement notre santé mentale</span>. Les
+              personnes âgées ou celles ayant une faible maitrise du web sont particulièrement
+              exposées à ces risques, accentuant les inégalités et la fracture numérique.
             </p>
           </div>
         </div>

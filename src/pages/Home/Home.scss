@@ -175,3 +175,38 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .home-container {
+    // padding: 20px !important;
+    .tag {
+      font-size: 12px;
+      // white-space: nowrap;
+    }
+
+    h1 {
+      font-size: 60px;
+      margin: 24px 0;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .summary-container {
+    .summary {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .grid-2,
+  .grid-vignette {
+    grid-template-columns: 1fr !important;
+  }
+
+  .modal {
+    .modal-content {
+      width: 90%;
+    }
+  }
+}
