@@ -55,6 +55,22 @@ footer {
     }
   }
 
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      color: #000590;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 20px; /* 153.846% */
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
   .footer__credits {
     color: #00059094;
   }

@@ -14,6 +14,7 @@ import Soluce from "./pages/Soluce/Soluce";
 import Conc from "./pages/Conc/Conc";
 import Remer from "./pages/Remer/Remer";
 import sidebarData from "./sidebarData.json";
+import Sources from "./pages/Sources/Sources";
 
 const App = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -100,6 +101,7 @@ const App = () => {
               <Route path="/solutions" element={<Soluce />} />
               <Route path="/conclusion" element={<Conc />} />
               <Route path="/remerciements" element={<Remer />} />
+              <Route path="/sources" element={<Sources />} />
             </Routes>
           </div>
         </div>

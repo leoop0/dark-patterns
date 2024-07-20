@@ -32,6 +32,9 @@ const Footer = ({ prevLink, prevLabel, nextLink, nextLabel }) => {
           <div className="footer__credits">
             <p>&copy; {new Date().getFullYear()} DarkPatterns - Léo Frati. Tous droits réservés.</p>
           </div>
+          <div className="sources">
+            <Link to="/sources">Sources</Link>
+          </div>
         </div>
       </div>
     </footer>
